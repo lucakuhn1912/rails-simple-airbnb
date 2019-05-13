@@ -1,0 +1,26 @@
+<div class="container">
+  <h1><%= @flat.name %></h1>
+  <h2><%= @flat.address %></h2>
+
+  <h2>A bit more about this flat...</h2>
+  <p><%= @flat.description %></p>
+
+<div class=".d-inline-flex ">
+  <h2>Details</h2>
+  <p><i class="fas fa-users"></i> <%=  @flat.number_of_guests %></p>
+  <p><i class="fas fa-pound-sign"></i> <%= @flat.price_per_night %></p>
+</div>
+
+<div class=".d-inline-flex">
+  <h2>Share</h2>
+  <i class="fab fa-facebook-f"></i>
+  <i class="fab fa-twitter-square"></i>
+  <i class="fab fa-pinterest-square"></i>
+  <i class="fas fa-envelope-square"></i>
+</div>
+
+  <%= link_to "Home", flats_path, class:"btn btn-primary" %>
+
+
+</div>
+
